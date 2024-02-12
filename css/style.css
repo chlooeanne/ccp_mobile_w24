@@ -1,0 +1,117 @@
+* {
+    padding: 14px;
+    margin: 14px;
+}
+body {
+    font-family: monospace, 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color: #263238;
+}
+@media (min-width:600px) {
+    * {
+        padding: 20px;
+    }
+}
+@media (min-width:900px) {
+    * {
+        padding: 24px;
+    }
+}
+@media (prefers-reduced-motion) {
+    /* styles to apply if a user's device settings are set to reduced motion */
+}
+img {
+    width: 25rem;
+    align-content: center;
+}
+/* video {
+    width: 25rem;
+    align-content: center;
+} */
+.grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-content: center;
+    align-items: end;
+    padding: 24px;
+    background-color: lavender;
+}
+.grid2 {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    justify-content: center;
+    align-items: end;
+    padding: 24px;
+    background-color: lavender;
+}
+.skip {
+    position: absolute;
+    overflow: hidden;
+    width: 1px;
+    height: 1px;
+    display: block;
+    text-align: center;
+}
+.skip:focus {
+    position: static;
+    overflow: visible;
+    width: auto;
+    height: auto;
+}
+h1 {
+    justify-content: flex-start;
+    font-size: xx-large;
+    font-family: fantasy;
+    padding: 0px 0px 0px 24px;
+    background-color: aqua;
+}
+nav {
+    display: flex;
+    justify-content: space-evenly;
+    padding: 1rem 2rem;
+    background: rgb(255,255,255);
+    background: linear-gradient(90deg, rgba(255,255,255,1) 5%, rgba(255,0,247,1) 39%, rgba(120,0,255,1) 93%);
+    align-items: center;
+    font-size: x-large;
+}
+nav ul {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+}
+nav li {
+    justify-content: center;
+    padding-left: 1rem;
+}
+main ul, main ol {
+    padding: 0px 24px 24px 24px;
+}
+main ul {
+    list-style-type: square;
+}
+main p, ul, ol {
+    padding: 14px;
+    font-size: larger;
+}
+h2 {
+    font-size: xx-large;
+    background-color: blanchedalmond;
+}
+h3 {
+    font-size: x-large;
+}
+#likes, #what, #pros {
+    background-color: aquamarine;
+}
+#photo, #how {
+    background-color: hotpink;
+}
+#cons {
+    background-color: lightcoral;
+}
+#current {
+    border-style: solid;
+    border-radius: 20%;
+    border-width: 2px;
+    font-weight: bold;
+    font-size: xx-large;
+}
