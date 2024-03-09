@@ -6,19 +6,6 @@ body {
     font-family: monospace, 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     color: #263238;
 }
-@media (min-width:600px) {
-    * {
-        padding: 20px;
-    }
-}
-@media (min-width:900px) {
-    * {
-        padding: 24px;
-    }
-}
-@media (prefers-reduced-motion) {
-    /* styles to apply if a user's device settings are set to reduced motion */
-}
 img {
     width: 25rem;
     align-content: center;
@@ -78,12 +65,15 @@ nav ul {
     justify-content: center;
     list-style: none;
 }
-nav li {
+nav li, a:visited {
     justify-content: center;
     padding-left: 1rem;
+    color: black;
+    background-color: rgba(255,255,255,0.6);
 }
 main ul, main ol {
     padding: 0px 24px 24px 24px;
+    margin: 14px;
 }
 main ul {
     list-style-type: square;
@@ -114,4 +104,17 @@ h3 {
     border-width: 2px;
     font-weight: bold;
     font-size: xx-large;
+}
+@media (min-width:600px) {
+    * {
+        padding: 20px;
+    }
+}
+@media (min-width:900px) {
+    * {
+        padding: 24px;
+    }
+}
+@media (prefers-reduced-motion) {
+    /* styles to apply if a user's device settings are set to reduced motion */
 }
